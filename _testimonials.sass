@@ -1,0 +1,86 @@
+#testimonials
+	height: rem(455px)
+
+.feedback
+	margin: 0 7px
+	vertical-align: middle	
+
+.testimonials_head
+	@include heading
+	margin-top: 75px
+
+.message
+	width: 460px
+	height: 150px
+	background: #f6f3f3	
+	position: relative
+	display: inline-block
+
+.message
+	&:last-child
+		margin-left: 100px	
+
+
+.message
+	&:after
+		display: block
+		content: ''
+		background-image: url('images/arrow.png')	
+		width: 22px
+		height: 18px
+		margin: 17px 0 0 38px
+
+.testimonials_list
+	list-style: none
+	width: rem(5020px)
+	display: flex
+	justify-content: space-between
+	margin: auto
+	transition: all .4s
+
+.testimonials_item
+	max-width: rem(1030px)
+	margin-top: 45px			
+
+.message_text 
+	width: rem(405px)
+	margin: auto
+	padding-top: 17px
+	font-family: $OpenSans
+	font-style: italic
+	font-size: 13px
+	color: #747474
+	line-height: 23px
+
+.profile 
+	width: 28px
+	height: 28px
+	display: inline-block
+
+.profile_name 
+	margin: 8px 0 0 25px	
+
+.profile_info
+	display: flex
+	position: absolute
+	bottom: -40px
+
+.dots_list
+	width: 65px
+	display: flex
+	justify-content: space-between
+	margin: auto
+	transform: translateX(-20%)
+	margin-top: 110px
+	list-style: none
+
+.dots_item
+	width: 10px
+	height: 10px
+	border-radius: 50%
+	background: #2825283d	
+
+.dotsSelected
+	background: #fff
+	border: 2px solid rgb(112, 157, 202)	
+	margin-top: -2px		

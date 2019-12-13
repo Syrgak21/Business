@@ -1,0 +1,142 @@
+#contact
+	max-width: 100%
+	height: 440px
+	position: absolute
+	bottom: -440px
+	background: rgb(39, 58, 67)
+
+.footer_content
+	margin-top: 55px
+	width: rem(1150px)
+	display: flex
+	justify-content: space-between
+	margin-bottom: 50px
+	flex-wrap: wrap
+
+.footer_head
+	color: #fff
+	margin-bottom: 10px
+	font-size: 22px
+	font-family: $OpenSans
+	font-weight: normal
+
+.footer_text
+	font-family: $OpenSans
+	font-size: 13.5px
+	color: #c4c4c4
+
+.footer_block1
+	width: rem(270px)
+	.footer_head
+		font-family: $Pacifico
+	.footer_text
+		font-family: 'Lato'	
+		font-size: 14px
+		margin-top: -5px
+
+.footer_block2
+	width: rem(270px)
+
+.footer_block3
+	width: rem(280px)	
+
+.footer_block4
+	width: rem(275px)
+
+.contact
+	margin-top: 17px
+	display: block
+	img 
+		display: inline-block
+		margin-right: 16px	
+	&:nth-child(odd)
+		img 
+			margin-left: 3px	
+	p
+		display: inline-block	
+		color: #fff
+		font-family: $OpenSans
+		font-size: 13.5px
+		margin: 0	
+
+.contact_text
+	margin-left: 4px !important	
+
+.tweet	
+	margin-top: 20px
+	img 
+		display: inline-block
+		vertical-align: top
+	p 
+		display: inline-block
+		width: rem(225px)
+		margin: -5px 0 0 7px	
+
+.hours
+	color: #71b6d5
+	font-family: $OpenSans
+	font-size: 13.5px
+	display: block	
+	margin-top: 5px
+
+.footer_text2 
+	width: rem(250px) !important	
+
+.input
+	@include input
+	color: #a7a7a7
+	width: 180px
+	padding: 0
+	border-top-left-radius: 6px
+	border-bottom-left-radius: 6px
+	background: #172227
+
+.submit
+	@include input
+	margin-left: -5px
+	vertical-align: top
+	width: 83px
+	border-top-right-radius: 6px
+	border-bottom-right-radius: 6px
+	background: rgb(113, 182, 213)
+	cursor: pointer	
+	&:hover
+		color: rgb(113, 182, 213)
+		background: #fff
+	&:active
+		font-size: 13px	
+
+.follow
+	height: 88px
+	width: rem(1440px)
+	background: rgb(23, 34, 39)
+	font-size: 13.5px
+	font-family: $OpenSans
+	color: #c4c4c4
+	p
+		margin: 0
+		margin-top: 35px
+
+.follow_content
+	width: rem(1110px)
+	display: flex
+	justify-content: space-between
+	margin: auto
+
+.social_list
+	width: 105px
+	list-style: none
+	margin-top: 30px
+	padding: 0
+	display: flex
+	justify-content: space-between
+
+.social_item
+	width: 30px
+	height: 30px
+	background: #2c3b42
+	&:hover
+		background: #71b6d5	
+	img 
+		margin: 50% 50%
+		transform: translate(-50%, -50%)

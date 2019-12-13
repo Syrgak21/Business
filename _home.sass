@@ -1,0 +1,137 @@
+#home 
+  height: 560px
+  width: inherit
+  background: rgba(25, 0, 39, 0.52)
+
+#home::after 
+  content: ''
+  width: inherit
+  height: 560px
+  background-image: url("images/home.gif")
+  position: absolute
+  top: 0
+  left: 0
+  z-index: -1
+
+.content 
+  width: rem(1095px)
+  margin: auto
+
+.navbar 
+  padding-top: 20px
+  display: flex
+  justify-content: space-between
+
+.logo 
+  margin: 0
+  font-family: $Pacifico
+  font-size: 30px
+  color: #ffc155
+
+.navbar_list 
+  padding: 0
+  list-style: none
+  display: flex
+  max-width: rem(495px)
+  justify-content: space-between
+
+
+.navbar_item a 
+  font-family: $OpenSans
+  color: white
+  font-size: 14.5px
+  text-decoration: none
+  padding: 0 15px
+
+.navbar_item:hover a 
+  color: #ffc155
+  transition-duration: .1s
+
+.homeSlider 
+  position: relative
+  width: 3330px
+
+.home_list 
+  width: 100%
+  margin-top: 150px
+  margin-left: 155px
+  transition: .3s
+
+.more 
+  font-size: 25px
+  display: block
+  font-weight: normal
+
+.home_item
+  margin-left: 400px
+  width: 710px
+  display: inline-block
+  color: #fff
+  font-size: 47px
+  font-family: $OpenSans
+  font-weight: 600
+  list-style: none
+  text-align: center
+
+.homeActive
+  margin-left: 0 
+
+.control 
+  position: absolute
+  top: 30px
+  display: flex
+  width: 1100px
+  justify-content: space-between
+
+
+.btn 
+  border: 2px solid rgb(112, 157, 202)
+  border-radius: 50%
+  width: 40px
+  height: 40px
+  cursor: pointer
+  &:hover
+    background: rgb(112, 157, 202)
+
+
+.btn img 
+  width: 10px
+  height: 17px
+  margin: 12px 15px
+
+
+.show 
+  background: $blue
+  border-radius: 4px
+  color: #fff
+  width: 150px
+  height: 50px
+  font-family: $OpenSans
+  font-weight: 600
+  font-size: 17px
+  border: none
+  margin-top: 70px
+  cursor: pointer
+  &:hover
+    background: #fff
+    color: $blue
+    transition-duration: .2s
+  &:focus
+    outline: none
+  &:active
+    font-size: 16.5px 
+
+.dot_list
+  list-style: none
+  width: 80px
+  display: flex
+  justify-content: space-between
+  padding: 0
+  margin: auto
+
+.dot_item 
+  background: transparent
+  width: 7px
+  height: 7px
+  border-radius: 50%
+  

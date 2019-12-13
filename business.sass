@@ -1,0 +1,52 @@
+$blue: #4d9dc3f5
+$orange: #ffc155
+$OpenSans: 'Open Sans', sans-serif
+$Pacifico: 'Pacifico', cursive
+
+@function rem($target)
+  $result : $target / 16px + 0rem
+  @return $result
+
+@mixin heading
+  font-size: 27px
+  font-family: $OpenSans
+  font-weight: 800
+  color: #709dca
+  text-align: center  
+
+@mixin input
+  color: #fff
+  font-family: $OpenSans
+  font-size: 13.5px
+  height: 36px
+  border: none
+  margin-top: 25px  
+  &:focus
+    outline: none
+
+body 
+  width: rem(1440px)
+  margin: 0
+  padding: 0
+  overflow-x: hidden
+  position: relative
+
+@import '_home'
+@import '_services'
+@import '_about'
+@import '_portfolio'
+@import '_testimonials'
+@import '_footer'
+
+
+@media screen and (max-width: 1330px) 
+  #home
+    .navbar
+      margin-right: 13%
+
+  .offer_list
+    display: block
+    .offer_item
+      display: inline-block
+      width: 500px
+      margin: 1% 1%  

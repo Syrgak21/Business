@@ -1,0 +1,103 @@
+#portfolio
+	max-height: rem(830px)
+
+.portfolio_head
+	@include heading
+	margin-top: 80px
+
+.portfolio_text
+	color: #062033
+	font-size: 16px
+	font-family: $OpenSans
+	text-align: center
+	width: rem(910px)
+	margin: auto
+
+.decoration
+	margin: auto
+	width: 220px
+	margin-top: -12px
+	margin-bottom: 30px
+
+.settings 
+	vertical-align: middle
+	margin: 0 9px
+
+.portfolio_list 
+	max-width: rem(560px)
+	display: flex
+	justify-content: space-between
+	margin: auto
+	margin-top: 55px
+	list-style: none
+
+.portfolio_item 
+	cursor: pointer
+	padding: 3px 14px
+	color: #062033
+	font-size: 15px
+	font-family: $OpenSans
+	&:hover
+		background: $blue
+		color: #fff	
+		border-radius: 8px	
+
+.portfolioActive
+	background: $blue
+	color: #fff	
+	border-radius: 8px	
+
+.tab_list
+	list-style: none
+	display: flex
+	flex-wrap: wrap
+	padding: 0
+	margin-top: 35px	
+	transition: opacity 3s
+
+.tab_img
+	width: 364px
+	height: 280px
+
+.tab_item
+	width: 360px
+	height: 280px
+	margin: -.6px
+	position: relative
+	&:hover 
+		.zoom
+			opacity: 1
+			transition-duration: .2s
+			transition-delay: .1s
+			transition-timing-function: ease-in-out
+			opacity: .93	
+			.eye
+				width: 35px
+				height: 35px
+				border-radius: 50%
+				border: 1px solid #f5f5f5b8
+				margin: auto
+				margin-top: 85px
+				img 
+					margin: 50% 50%
+					transform: translate(-50%, -50%)		
+			.zoom_more, .zoom_text
+				font-size: 17px
+				font-family: $OpenSans
+				font-weight: 600
+				color: #fff
+				text-align: center	
+			.zoom_more
+				font-size: 14px
+				font-weight: normal	
+				margin-top: -10px	
+
+.zoom
+	vertical-align: top
+	width: 364px
+	opacity: 0
+	height: 280px
+	position: absolute
+	top: 0
+	left: 0
+	background: $orange
